@@ -1,6 +1,6 @@
-package com.myriadcode.fsrs.domain.models;
+package com.myriadcode.fsrs.api.models;
 
-import com.myriadcode.fsrs.domain.enums.Rating;
+import com.myriadcode.fsrs.api.enums.Rating;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package com.myriadcode.fsrs.domain.enums;
+package com.myriadcode.fsrs.api.enums;
 
 public enum Rating {
     AGAIN(1), HARD(2), GOOD(3), EASY(4);

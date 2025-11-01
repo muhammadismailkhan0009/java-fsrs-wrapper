@@ -1,4 +1,4 @@
-package com.myriadcode.fsrs.domain.enums;
+package com.myriadcode.fsrs.api.enums;
 
 public enum State {
     NEW(0),

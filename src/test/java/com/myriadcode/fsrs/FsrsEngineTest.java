@@ -1,15 +1,15 @@
 package com.myriadcode.fsrs;
 
-import com.myriadcode.fsrs.domain.FsrsEngine;
-import com.myriadcode.fsrs.domain.enums.Rating;
-import com.myriadcode.fsrs.domain.models.Card;
+import com.myriadcode.fsrs.api.FsrsEngine;
+import com.myriadcode.fsrs.api.enums.Rating;
+import com.myriadcode.fsrs.api.models.Card;
 import org.junit.jupiter.api.Test;
 
 import java.time.Instant;
 
 public class FsrsEngineTest {
 
-    private FsrsEngine engine = new FsrsEngineImpl();
+    private FsrsEngine engine = FsrsEngine.createDefault();
 
     @Test
     public void simpleTest() {

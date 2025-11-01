@@ -1,10 +1,10 @@
-package com.myriadcode.fsrs;
+package com.myriadcode.fsrs.internal;
 
-import com.myriadcode.fsrs.domain.FsrsEngine;
-import com.myriadcode.fsrs.domain.enums.Rating;
-import com.myriadcode.fsrs.domain.models.Card;
-import com.myriadcode.fsrs.domain.models.ReviewResult;
-import com.myriadcode.fsrs.mappers.EngineMappers;
+import com.myriadcode.fsrs.api.FsrsEngine;
+import com.myriadcode.fsrs.api.enums.Rating;
+import com.myriadcode.fsrs.api.models.Card;
+import com.myriadcode.fsrs.api.models.ReviewResult;
+import com.myriadcode.fsrs.internal.mappers.EngineMappers;
 import org.graalvm.polyglot.Value;
 
 import java.time.Instant;

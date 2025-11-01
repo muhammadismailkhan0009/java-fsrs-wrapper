@@ -1,10 +1,10 @@
-package com.myriadcode.fsrs.mappers;
+package com.myriadcode.fsrs.internal.mappers;
 
-import com.myriadcode.fsrs.domain.enums.Rating;
-import com.myriadcode.fsrs.domain.enums.State;
-import com.myriadcode.fsrs.domain.models.Card;
-import com.myriadcode.fsrs.domain.models.ReviewLog;
-import com.myriadcode.fsrs.domain.models.ReviewResult;
+import com.myriadcode.fsrs.api.enums.Rating;
+import com.myriadcode.fsrs.api.enums.State;
+import com.myriadcode.fsrs.api.models.Card;
+import com.myriadcode.fsrs.api.models.ReviewLog;
+import com.myriadcode.fsrs.api.models.ReviewResult;
 import org.graalvm.polyglot.Context;
 import org.graalvm.polyglot.Value;
 

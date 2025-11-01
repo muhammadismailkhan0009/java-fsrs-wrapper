@@ -1,7 +1,6 @@
-package com.myriadcode.fsrs;
+package com.myriadcode.fsrs.internal;
 
 
-import com.myriadcode.App;
 import org.graalvm.polyglot.Context;
 import org.graalvm.polyglot.Value;
 
@@ -54,7 +53,7 @@ public class JsBridge implements AutoCloseable {
     }
 
     private static String readResource(String path) {
-        try (InputStream is = App.class.getResourceAsStream(path)) {
+        try (InputStream is = JsBridge.class.getResourceAsStream(path)) {
             if (is == null) throw new RuntimeException("Missing resource: " + path);
             return new String(is.readAllBytes(), StandardCharsets.UTF_8);
         } catch (Exception e) {
