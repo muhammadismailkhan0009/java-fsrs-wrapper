@@ -2,6 +2,7 @@ package com.myriadcode.fsrs.api.models;
 
 import com.myriadcode.fsrs.api.enums.Rating;
 import com.myriadcode.fsrs.api.enums.State;
+import com.myriadcode.fsrs.internal.infra.JsonConverter;
 
 import java.time.Instant;
 
@@ -20,5 +21,13 @@ public record ReviewLog(
         double stability,
         State state
 ) {
+
+    public String toJson() {
+        return JsonConverter.toJson(this);
+    }
+
+    public static ReviewLog fromJson(String json) {
+        return JsonConverter.fromJson(json, ReviewLog.class);
+    }
 
 }
