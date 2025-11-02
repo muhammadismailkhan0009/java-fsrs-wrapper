@@ -19,14 +19,14 @@ public class FsrsEngineImpl implements FsrsEngine {
     }
 
     @Override
-    public Card createEmptyCard(Instant now) {
+    synchronized public Card createEmptyCard(Instant now) {
         var jsCard = jsBridge.newCard(Value.asValue(Date.from(now)));
         return EngineMappers.toCard(jsCard);
     }
 
 
     @Override
-    public ReviewResult scheduleAllPossibilities(Card card, Instant reviewTime) {
+    synchronized public ReviewResult scheduleAllPossibilities(Card card, Instant reviewTime) {
         var result = jsBridge.repeat(EngineMappers.toCardJs(jsBridge.getCtx(), card), Value.asValue(Date.from(reviewTime)));
         return EngineMappers.toReviewResult(result);
     }
